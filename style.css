@@ -1,0 +1,103 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #F8F9FA;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #2C3E50;
+}
+
+.btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.absen {
+  background-color: #4A90E2;
+}
+
+.batal {
+  background-color: #E74C3C;
+}
+
+.export-pdf {
+  background-color: #4A90E2;
+}
+
+.export-excel {
+  background-color: #2ECC71;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.hidden {
+  display: none;
+}
+
+#statusText {
+  color: #7F8C8D;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #4A90E2;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+.nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #7F8C8D;
+}
+
+.nav-btn.active {
+  color: #4A90E2;
+}

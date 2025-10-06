@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Absen Pribadi</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Absen Kehadiran</h1>
+
+    <div id="home-menu" class="menu">
+      <button id="absenBtn" class="btn absen">Absen Sekarang</button>
+      <button id="batalBtn" class="btn batal hidden">Batal Absen</button>
+      <p id="statusText">Belum absen hari ini</p>
+    </div>
+
+    <div class="nav">
+      <button id="navHome" class="nav-btn active">🏠 Home</button>
+      <button id="navRiwayat" class="nav-btn">📋 Riwayat</button>
+    </div>
+
+    <div id="riwayat-menu" class="menu hidden">
+      <h2>Riwayat Absen</h2>
+      <table id="riwayatTable">
+        <thead>
+          <tr>
+            <th>Tanggal</th>
+            <th>Keterangan</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="export">
+        <button id="exportPdf" class="btn export-pdf">📄 Export PDF</button>
+        <button id="exportExcel" class="btn export-excel">📊 Export Excel</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
